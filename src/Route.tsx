@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Home from './Home'
 import Confession from './Confession'
 import Misdemeanours from './Misdemeanours'
@@ -37,7 +37,7 @@ const AppRoutes: React.FC = () =>
     }, []);
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route element={<MainLayout/>}>
                     <Route index element={<Home/>}/>
@@ -46,7 +46,7 @@ const AppRoutes: React.FC = () =>
                     <Route path='*' element={<PageNotFound/>}/>
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
 
     );
 
