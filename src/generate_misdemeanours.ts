@@ -1,3 +1,5 @@
+import {MisdemeanourEntry} from "./MisdemeanourEntry";
+
 export const MISDEMEANOURS = [
 	'rudeness',
 	'vegetables',
@@ -6,13 +8,6 @@ export const MISDEMEANOURS = [
 ] as const;
 
 export type Misdemeanour = typeof MISDEMEANOURS[number];
-
-interface MisdemeanourEntry
-{
-	citizenId: number;
-	misdemeanour: "rudeness" | "vegetables" | "lift" | "united";
-	date: string;
-}
 
 export default async function generateMisdemeanours(
 	number: number
