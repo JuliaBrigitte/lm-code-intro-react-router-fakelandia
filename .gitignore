@@ -10,7 +10,6 @@
 
 
 # production
-/build
 /dist
 /frontend/src/interface/build
 
