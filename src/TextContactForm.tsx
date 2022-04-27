@@ -8,10 +8,10 @@ const TextContactForm = ({textContactForm, triggerTextContactFormUpdate, checkDi
         //Text Contact Form: Must be between 10 and 153 characters.
         if ((value.length < 10) ||  (value.length > 153))
         {
-            checkDisabledSubmit(false)
+            checkDisabledSubmit(true)
             return "Reason must be between 10 and 153 characters"
         }
-        checkDisabledSubmit(true)
+        checkDisabledSubmit(false)
         return ""
 
     }

@@ -20,14 +20,7 @@ const Confession  = ({misdemeanorsList, misdemeanorsListUpdate}: {misdemeanorsLi
 
     function checkDisabledSubmit(validationOk: boolean)
     {
-        if ((subject !== "") && (reasonForContact !== "") && (textContactForm != ""))
-        {
-            setDisabled(false)
-        }
-        else
-        {
-            setDisabled(validationOk)
-        }
+       setDisabled(validationOk)
     }
 
     // @ts-ignore
